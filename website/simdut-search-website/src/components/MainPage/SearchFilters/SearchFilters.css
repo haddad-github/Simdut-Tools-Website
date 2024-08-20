@@ -1,0 +1,288 @@
+.search-filters {
+  text-align: center;
+  margin: 20px auto; /* Spacing from other elements */
+  width: 100%;
+  max-width: 800px; /* Match the SearchBar width */
+  transform: translate(90px);
+}
+
+.filter-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  flex-basis: calc(50% - 20px); /* Each group will take up half of the row minus margin */
+  margin: 10px;
+
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333; /* or any other color that fits the theme */
+}
+
+.filter-group input {
+  width: 100%; /* Make input take up all available width */
+  padding: 10px;
+  margin-bottom: 10px; /* Spacing below the input field */
+}
+
+.filter-group.date-range input {
+  margin-bottom: 0; /* No margin for date inputs */
+  margin-right: 10px; /* Spacing between date inputs */
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #d12317; /* Theme red color */
+  border: 1px solid #d12317;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+  margin-top: 10px; /* Space from the last filter input */
+}
+
+.search-button:hover {
+  background-color: #a71d12; /* Darker shade for hover effect */
+}
+
+.see-more-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f4f4f4;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block; /* Ensure the button is a block element to fit width */
+  width: 100%;
+  margin: 20px auto;
+}
+
+.see-more-button:hover {
+  background-color: #e9e9e9;
+}
+
+.loading {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .filter-row {
+    flex-direction: column;
+  }
+
+  .filter-group {
+    flex-basis: 100%; /* Full width for smaller devices */
+    margin: 10px 0; /* Provide consistent spacing */
+  }
+
+  .filter-group.date-range input {
+    margin-right: 0; /* Stack the date inputs */
+  }
+
+  .see-more-button {
+    width: calc(100% - 40px); /* Adjust width for smaller screens */
+    margin: 20px auto;
+  }
+}
+
+/* Enhancements for the results table */
+table {
+  width: 100%; /* Full width of its container */
+  max-width: none; /* Remove any maximum width restrictions */
+  border-collapse: collapse; /* Clean table look */
+  margin: 0; /* Remove any margin */
+}
+
+th,
+td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-weight: bold;
+}
+
+/* Make the 'Add to List' button a square */
+.add-to-list-button {
+  display: inline-block;
+  padding: 8px;
+  background-color: #28a745; /* Green color for success action */
+  color: white;
+  border: none;
+  border-radius: 0; /* Square shape */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block; /* Change to block to allow margin auto to work */
+  margin: 0 auto; /* Auto margin for horizontal centering */
+}
+
+.add-to-list-button:hover {
+  background-color: #218838; /* Slightly darker green on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* Adjustments for mobile responsiveness */
+  .search-filters,
+  .filter-group {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .filter-row {
+    flex-direction: column;
+  }
+}
+
+/* Scrollable table container */
+.results-table-container {
+  overflow-x: auto;
+  max-height: 400px; /* Adjust based on your needs */
+  overflow-y: auto;
+}
+
+
+/* Ensure the table itself is not wider than necessary */
+table {
+  width: 100%; /* Table should only be as wide as its content, up to 100% */
+  border-collapse: collapse;
+  margin: 20px auto; /* Center the table */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Optional shadow for depth */
+}
+
+/* Additional adjustments for the table */
+table {
+  border-collapse: collapse; /* Collapse borders */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Optional: Add shadow for depth */
+}
+
+/* Styling table headers */
+table th {
+  background-color: #d12317; /* Red background for headers */
+  color: white;
+  padding: 10px; /* Or your preferred padding */
+  text-align: center; /* Center text in headers */
+  border: 1px solid #fff; /* White borders for distinction */
+}
+
+/* Styling table cells */
+table td {
+  padding: 10px; /* Or your preferred padding */
+  text-align: center; /* Center text in cells */
+  border: 1px solid #eaeaea; /* Light borders for cells */
+}
+
+/* Modify the .search-filters to make sure it's centered and has padding */
+.search-filters {
+  text-align: center;
+  margin: 20px auto; /* Spacing from other elements */
+  width: 100%;
+  max-width: 800px; /* Match the SearchBar width */
+  /* Remove any transform properties */
+}
+
+.search-filters h2{
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;/* Margin top and bottom */
+  /* Do not set a max-width here if you want the table to be as wide as its content */
+}
+
+
+/* Ensure the search button is centered in its container */
+.search-button {
+  display: block; /* Change to block to allow margin auto to work */
+  margin: 20px auto; /* Auto margin for horizontal centering */
+  width: fit-content; /* Adjust width to fit content */
+}
+
+.search-filters-heading {
+  text-align: center;
+  padding: 10px 20px; /* Add more horizontal padding */
+  margin: 20px auto; /* Center it */
+  border: 2px solid #d12317; /* Keep the border if you like */
+  border-radius: 15px; /* Rounded corners */
+  background-color: #ffefef; /* Light red background, change as needed */
+  display: inline-block; /* Only as wide as necessary */
+  max-width: 80%; /* Adjust as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+}
+
+.dark-mode .search-filters,
+.dark-mode .filter-group label,
+.dark-mode .search-button,
+.dark-mode table th,
+.dark-mode table td {
+  color: white; /* Ensure text is white in dark mode */
+  /* Add other dark mode styles as needed */
+}
+
+/* Dark mode styles */
+.dark-mode .search-bar input,
+.dark-mode .autocomplete-suggestions li {
+  color: #ccc;
+  background: #222;
+}
+
+.dark-mode .search-bar button {
+  background-color: #28a745; /* Green background */
+  border-color: #28a745; /* Green border */
+  color: white; /* White text */
+}
+
+.dark-mode .search-bar button:hover {
+  background-color: #218838; /* Darker green for hover effect */
+}
+
+.confirmation-popup {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background-color: #4CAF50; /* Changed to a more noticeable green */
+  color: white; /* White text for better contrast */
+  border: 2px solid #3e8e41; /* Darker green border */
+  padding: 20px 40px; /* Increased padding for more space */
+  border-radius: 10px; /* Slightly larger border radius for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow for more depth */
+  font-size: 20px; /* Larger font size for better readability */
+  opacity: 0;
+  animation: fadein 0.5s forwards, fadeout 0.5s 4.5s forwards;
+}
+
+/* Keyframes for the fade-in effect */
+@keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Keyframes for the fade-out effect */
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+body.dark-mode button.search-button:hover{
+  background-color: #680707;
+}
+
+body.dark-mode button.add-to-list-button{
+  background-color: #28a745;
+}

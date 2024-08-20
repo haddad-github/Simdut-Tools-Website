@@ -1,0 +1,63 @@
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.nav-item {
+  display: inline-flex; /* Changed to inline-flex to align logos with text */
+  align-items: center; /* Aligns items vertically */
+  margin: 0 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid transparent; /* Invisible border to maintain layout on hover */
+  border-radius: 10px; /* Rounded corners for the rectangle */
+  cursor: pointer;
+  transition: border-color 0.1s, transform 0.1s; /* Smooth transition for hover effects */
+  font-weight: bold; /* Makes the text bold */
+  position: relative; /* For positioning the underline */
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -5px; /* Adjust to move the underline up or down */
+  width: 0%;
+  height: 2px;
+  background: currentColor; /* The underline will be the same color as the text */
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-item:hover::after {
+  width: 100%; /* Full width underline on hover */
+  left: 0;
+}
+
+.nav-item:hover {
+  border-color: rgba(0, 0, 0, 0.1); /* Visible border on hover */
+  transform: scale(1.05); /* Slightly increase the size */
+  /* Add drop shadow or other effects as desired */
+}
+
+.nav-logo {
+  width: 24px; /* Default width for all nav logos */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 8px; /* Spacing between logo and text */
+  transition: filter 0.3s; /* Smooth transition for filter effects */
+  filter: none;
+}
+
+/* Dark mode logo styles */
+body.dark-mode .nav-logo {
+  filter: invert(100%); /* Invert colors in dark mode */
+}
+
+/* Additional styles specifically for the email logo */
+.nav-item.mail .nav-logo {
+  width: 32px; /* Larger width for the email logo */
+  height: auto; /* Maintain aspect ratio */
+}

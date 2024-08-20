@@ -1,0 +1,108 @@
+/* General page styling */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* List item styles */
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    position: relative; /* Position relative to control button position */
+}
+
+.list-item-content {
+    flex-grow: 1;
+    cursor: pointer;
+    padding-right: 100px; /* Add padding to make space for the delete button */
+    font-size: 16px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+}
+
+.list-item:hover {
+    transform: scale(1.02);
+    background-color: #e8f0fe;
+    border-color: #007bff;
+}
+
+.list-item:active {
+    transform: scale(0.98);
+}
+
+/* Delete button styles */
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #ffdddd;
+    border: 1px solid #ffcccc;
+    border-radius: 5px;
+    color: #d12317;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for background-color and transform */
+    position: absolute; /* Absolute position to separate from content */
+    right: 10px; /* Align to the right with spacing */
+}
+
+.delete-btn:hover {
+    background-color: #ff7c7c;
+    transform: scale(1.3);
+}
+
+.delete-btn:active {
+    transform: scale(0.95);
+}
+
+/* Add a subtle animation to underline the list name similar to 'SAVED LISTS' on hover */
+.list-item-content:hover::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #007bff;
+    width: 0;
+    margin: 0 auto;
+    transition: width 0.3s ease-in-out;
+}
+
+.list-item-content:hover::before {
+    width: 100%;
+}
+
+.lists-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+body.dark-mode .list-item-content {
+    color: #414040;
+    font-size: 16px; /* Ensure font size is also increased in dark mode */
+    font-weight: bold; /* Ensure text is bold in dark mode */
+}

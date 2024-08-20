@@ -1,0 +1,314 @@
+.signup-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050; /* Higher than other elements */
+}
+
+.eye-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 100px; /* Adjust this value to move the icon to the right */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sign-up-button {
+  padding: 12px 30px; /* Similar padding to the login button for uniformity */
+  font-size: 16px; /* Readable font size */
+  font-weight: bold; /* Bold font */
+  color: white; /* Text color */
+  background-image: linear-gradient(to right, #707070, #707070); /* Gradient background */
+  border: none; /* No border */
+  border-radius: 30px; /* Fully rounded corners for the button */
+  cursor: pointer;
+  outline: none; /* Remove outline to keep the design clean */
+  text-transform: uppercase; /* CAPITALIZE the text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for the hover effect */
+  margin-left: 20px; /* Space from the login button or other elements */
+}
+
+.sign-up-button:hover {
+  background-image: linear-gradient(to left, #880909, #880909); /* Change gradient direction on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Larger shadow for a "pop" effect */
+  transform: scale(1.05); /* Slightly increase size on hover for a popping effect */
+}
+
+.sign-up-form {
+  position: relative;
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Width of the form */
+  z-index: 1051; /* Above the overlay */
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #dc3545;
+  border-radius: 50%; /* Circular shape */
+  color: white; /* 'X' color */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1000; /* Ensure it's directly below the form */
+}
+
+.sign-up-form {
+  border-radius: 15px;
+  text-align: center; /* Centers the text */
+}
+
+.sign-up-form h2 {
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.sign-up-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-form label {
+  display: block; /* Full width */
+  text-align: left; /* Align text to the left */
+  margin-bottom: 5px; /* Space between label and input */
+}
+
+.sign-up-form input,
+.sign-up-form .submit-btn{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sign-up-form input,
+.sign-up-form button {
+  padding: 10px;
+  margin-left: 10px; /* Ensures space between label and input */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+
+/* Keep the eye icon within the input field */
+/* This class will be added to the container of input to position eye icon correctly */
+.password-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sign-up-form input {
+  padding: 10px;
+  margin-bottom: 20px; /* More space between inputs */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sign-up-form button[type="submit"] {
+  background-color: #28a745; /* Different color for sign-up to differentiate from login */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.sign-up-form button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.sign-up-form button:not([type="submit"]) {
+  background-color: #dc3545; /* Cancel/close button */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px; /* Space between submit and close button */
+}
+
+.sign-up-form button:not([type="submit"]):hover {
+  background-color: #c82333;
+}
+
+.logo {
+  height: 40px; /* Adjust size as needed */
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.toggle-visibility {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.toggle-visibility.visible {
+  opacity: 1;
+}
+
+.error-message, .registration-success {
+  color: #dc3545; /* Red color for error message */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.registration-success {
+  color: #28a745; /* Green color for success */
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* This assumes you're using FontAwesome for icons */
+/* Only show red background on close button hover */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px; /* Size of the close button */
+  height: 30px; /* Size of the close button */
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+}
+
+.close-btn:hover {
+  background-color: #dc3545; /* Red background on hover */
+  border-radius: 50%; /* Round shape */
+  color: white; /* White 'X' */
+}
+
+/* Adjust for dark mode */
+body.dark-mode .close-btn {
+  color: #fff; /* Button color in dark mode */
+}
+
+/* Adjust the input wrapper to contain the eye icon within it */
+.input-wrapper {
+  position: relative;
+  display: flex; /* Flexbox to keep icon aligned */
+}
+
+/* Adjust the padding of the input to leave space for the icon */
+.input-wrapper input {
+  padding-right: 40px; /* Add padding to keep text from being hidden under icon */
+  flex-grow: 1; /* Ensure input uses all available space */
+}
+
+/* Adjust the position of the eye icon */
+.toggle-visibility {
+  position: absolute;
+  right: 10px; /* Position from the right */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Adjust the login button to be bigger with bold text */
+.login-form .submit-btn {
+  padding: 15px 20px; /* Bigger padding for a larger button */
+  font-size: 18px; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Uppercase text */
+}
+
+/* Dark mode specific styles */
+body.dark-mode .sign-up-form {
+  background-color: #2c2c2c; /* Dark mode background for the entire form box */
+  color: #FFF; /* White text for readability in dark mode */
+}
+
+body.dark-mode .sign-up-form input,
+body.dark-mode .sign-up-form button,
+body.dark-mode .sign-up-form .close-btn {
+  background-color: #434343; /* Dark mode background for inputs and buttons */
+  color: #FFF; /* White text for readability */
+  border-color: #555; /* Slightly lighter border for visibility */
+}
+
+body.dark-mode .sign-up-form input::placeholder {
+  color: #BDBDBD; /* Light color for dark mode placeholders */
+}
+
+body.dark-mode .sign-up-form label,
+body.dark-mode .sign-up-form h2,
+body.dark-mode .registration-success {
+  color: #FFF; /* Ensures texts are white in dark mode for readability */
+}
+
+.registration-success button {
+  display: block; /* Makes the button take a full line */
+  margin: 10px auto 0; /* Center it and add some margin */
+  background-color: #28a745; /* Green background for default mode */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color .3s, transform .3s; /* Smooth transition */
+}
+
+body.dark-mode .registration-success {
+  color: #85ff33; /* Red color for text in dark mode */
+}
+
+body.dark-mode .registration-success button {
+  background-color: #b02d36; /* Red background for button in dark mode */
+  color: white; /* White text for the button in dark mode */
+}
+
+body.dark-mode .registration-success button:hover {
+  background-color: #bd0a15; /* Darker red on hover */
+}
+
+/* Keep the submit and close buttons red in dark mode */
+body.dark-mode .sign-up-form button[type="submit"] {
+  background-color: #dc3545; /* Red background for the button */
+  color: white; /* White text */
+}
+
+body.dark-mode .sign-up-form .close-btn:hover {
+  background-color: #c82333; /* Darker red background on hover */
+}
+
+/* Add this if you want to change the color of the icons in dark mode */
+body.dark-mode .sign-up-form .eye-icon,
+body.dark-mode .sign-up-form .toggle-visibility {
+  filter: invert(1); /* Inverts the colors of the icons */
+}

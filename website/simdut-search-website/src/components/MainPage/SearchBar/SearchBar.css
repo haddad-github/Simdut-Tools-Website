@@ -1,0 +1,337 @@
+/* Base styles */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  max-width: 800px;
+  width: 100%;
+}
+
+.search-bar input {
+  padding: 17.5px 25px; /* Keep the large vertical padding, adjust horizontal padding as needed */
+  font-size: 24px; /* Increased font size for better visibility */
+  border: 2px solid #d12317;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  flex-grow: 1;
+  outline: none;
+  color: #333;
+  background: white;
+  text-align: left; /* Ensure text aligns to the left */
+  width: calc(100% - 50px); /* Adjust the width calculation if necessary */
+  box-sizing: border-box; /* Ensure padding doesn't affect the final size */
+}
+
+
+.search-bar button,
+.add-to-list-button {
+  padding: 20px 25px; /* Match input padding for uniform height */
+  font-size: 20px;
+  background-color: #d12317; /* Changed to red */
+  color: white;
+  border: 2px solid #d12317; /* Border color to match the button */
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-bar button{
+  transform: translate(90px);
+}
+
+.search-bar input{
+  transform: translate(90px);
+}
+
+
+.search-bar button:hover,
+.add-to-list-button:hover {
+  background-color: #a71d12; /* Darker shade of red for hover effect */
+}
+
+.autocomplete-suggestions {
+  position: absolute;
+  border: 1px solid #ddd;
+  border-top: none;
+  z-index: 1000;
+  width: 25%; /* Adjusted to ensure it aligns properly under the input */
+  background: white;
+  list-style: none;
+  padding: 0;
+  margin-top: -40px;
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures the inner elements adhere to the border-radius */
+  transform: translate(90px);
+}
+
+.autocomplete-suggestions li {
+  padding: 10px;
+  cursor: pointer;
+  color: #333;
+}
+
+.autocomplete-suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
+.list-dropdown {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style for list items with checkboxes */
+.list-dropdown ul li {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for custom checkboxes */
+.list-dropdown ul li label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.list-dropdown ul li input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.list-dropdown ul li:hover,
+.list-dropdown ul li.selected {
+  background-color: #d12317;
+  color: white;
+}
+
+.confirm-selection {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  width: 101%;
+}
+
+.confirm-selection:hover {
+  background-color: #218838;
+}
+
+/* Dark mode styles */
+.dark-mode .search-bar input,
+.dark-mode .autocomplete-suggestions li {
+  color: #ccc;
+  background: #222;
+}
+
+body.dark-mode .search-bar button {
+  background-color: #d12317; /* Keep the button red */
+  border-color: #d12317; /* Keep the border red if you have one */
+  color: white; /* Text color */
+}
+
+body.dark-mode .search-bar button:hover {
+  background-color: #a71d12; /* Darker red for hover effect in dark mode */
+}
+
+.dark-mode .search-bar button:hover {
+  background-color: #a71d12; /* Darker red for hover effect in dark mode */
+}
+
+.dark-mode .autocomplete-suggestions li:hover {
+  background-color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-bar input,
+  .search-bar button {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .search-bar button {
+    border-top: 2px solid #d12317;
+    margin-top: -1px;
+  }
+}
+
+/* Base styles for table */
+table {
+  width: 100%; /* Full width */
+  border-collapse: separate; /* Separate borders to allow spacing */
+  margin-top: 20px; /* Space from search bar */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Slight shadow for depth */
+  border-spacing: 0; /* Reset spacing */
+}
+
+/* Table Headers */
+th {
+    background-color: #d12317; /* Header background */
+    color: white; /* Header text color */
+    padding: 15px; /* Spacing within cells */
+    text-align: center; /* Center text */
+    font-size: 18px; /* Size of the header text */
+    font-weight: bold; /* Bold font */
+    border-right: 1px solid white; /* White separators */
+}
+
+th:last-child {
+    border-right: none;
+}
+
+/* Table rows and cells */
+td {
+    padding: 15px; /* Spacing within cells */
+    text-align: center; /* Center text */
+    font-size: 16px; /* Body text size */
+    font-weight: bold; /* Bold font */
+    border-bottom: 1px solid #f0f0f0; /* Subtle row dividers */
+    border-right: 1px solid #ddd; /* Separators */
+    color: #333; /* Text color */
+}
+
+td:last-child {
+    border-right: none;
+}
+
+/* Hover effect on rows */
+.dark-mode table {
+  background: #333; /* Dark mode background for table */
+}
+
+
+/* Dark mode styles */
+.dark-mode table {
+  background: #333; /* Dark mode background for table */
+}
+
+.dark-mode th {
+  background-color: #a71d12; /* Darker red for headers in dark mode */
+}
+
+.dark-mode td {
+  color: #ccc; /* Lighter text in dark mode */
+  border-right: 1px solid #444; /* Dark separators for dark mode */
+}
+
+.dark-mode tr:hover {
+  background-color: #444; /* Darker highlight for rows on hover in dark mode */
+}
+
+/* Make the 'Add to List' button look better */
+.add-to-list-button {
+    background-color: #28a745; /* Green color */
+    color: white;
+    padding: 10px; /* Padding around the button */
+    border: none;
+    border-radius: 4px; /* Slightly rounded corners for square appearance */
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s; /* Smooth transitions */
+}
+
+.add-to-list-button:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Responsive adjustments */
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  th, td {
+    padding: 10px; /* Less padding in smaller screens */
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .add-to-list-button {
+    padding: 8px; /* Smaller button padding */
+  }
+}
+
+.confirmation-popup {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background-color: #4CAF50; /* Changed to a more noticeable green */
+  color: white; /* White text for better contrast */
+  border: 2px solid #3e8e41; /* Darker green border */
+  padding: 20px 40px; /* Increased padding for more space */
+  border-radius: 10px; /* Slightly larger border radius for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow for more depth */
+  font-size: 20px; /* Larger font size for better readability */
+  opacity: 0;
+  animation: fadein 0.5s forwards, fadeout 0.5s 4.5s forwards;
+}
+
+/* Keyframes for the fade-in effect */
+@keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Keyframes for the fade-out effect */
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.search-results-container {
+  width: 125%; /* Width of the element you want to center */
+  margin: 20px auto 0 auto; /* Centering with top margin */
+  display: flex;
+  justify-content: center;
+}
+
+body.dark-mode th{
+    background-color: #960808; /* Header background */
+    color: white; /* Header text color */
+    padding: 15px; /* Spacing within cells */
+    text-align: center; /* Center text */
+    font-size: 18px; /* Size of the header text */
+    font-weight: bold; /* Bold font */
+    border-right: 1px solid white; /* White separators */
+}
+
+body.dark-mode td{
+    background: #808080;
+    padding: 15px; /* Spacing within cells */
+    text-align: center; /* Center text */
+    font-size: 16px; /* Body text size */
+    font-weight: bold; /* Bold font */
+    border-bottom: 1px solid #f0f0f0; /* Subtle row dividers */
+    border-right: 1px solid #ddd; /* Separators */
+    color: #333; /* Text color */
+}
+
+body.dark-mode .list-dropdown li{
+    color: #222222;
+}
+
+.search-error-message {
+  color: red;
+  text-align: center;
+  margin: 10px auto;
+  display: block;
+  margin-left: 25%;
+}
+
+body.dark-mode .search-error-message{
+    color: #fa200e;
+}

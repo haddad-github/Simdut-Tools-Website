@@ -1,0 +1,66 @@
+/* DarkModeButton.css */
+.dark-mode-toggle {
+  display: flex;
+  margin: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.mode-text {
+  color: #668; /* Choose color that suits both dark and white mode */
+  margin-bottom: 10px; /* Adjust spacing as needed */
+  text-align: center; /* Center the mode text */
+  font-weight: bold; /* Optional: make the text bold */
+}
+
+/* Adjustments for dark mode */
+body.dark-mode .mode-text {
+  color: #aaa; /* Lighter color for better readability in dark mode */
+}
+
+body.dark-mode {
+  background-color: #333; /* Preferred dark color for the body */
+}
+
+body.dark-mode .header {
+  background-color: #222; /* Slightly lighter dark color for header */
+  color: white; /* Text color for readability */
+}
+
+body.dark-mode .navigation-bar a {
+  color: white; /* Text color for navigation links */
+}
+
+body.dark-mode .traffic-stats,
+body.dark-mode .most-searched,
+body.dark-mode .saved-lists {
+  color: white; /* Text color for readability */
+  background-color: #444; /* Dark background for card-like components */
+}
+
+body.dark-mode .search-bar,
+body.dark-mode .search-filters {
+  background-color: transparent; /* Dark background for search bar and filters */
+  color: white; /* Text color for readability */
+  /* Adjust border and placeholder colors as necessary */
+}
+
+body.dark-mode .search-bar input,
+body.dark-mode .search-filters input,
+body.dark-mode .search-bar button,
+body.dark-mode .search-filters button {
+  color: white; /* Text color for input fields and buttons */
+  background-color: #555; /* Dark background for input fields and buttons */
+  border: 1px solid #777; /* Border color that complements the dark theme */
+}
+
+body.dark-mode .search-bar input::placeholder,
+body.dark-mode .search-filters input::placeholder {
+  color: #aaa; /* Lighter color for placeholders to ensure readability */
+}
+
+body.dark-mode .search-bar button,
+body.dark-mode .search-filters button {
+  background-color: #b70d0d; /* Distinct color for buttons to stand out */
+  border: 1px solid #333; /* Optional border color for buttons */
+}

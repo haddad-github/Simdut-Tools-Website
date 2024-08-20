@@ -1,0 +1,21 @@
+.logo-container {
+  cursor: pointer;
+  display: inline-block; /* Make the div inline for better control */
+  transition: transform 0.3s ease; /* Smooth transition for the scaling */
+}
+
+.logo-image {
+  width: 150px; /* Adjust to the size of your logo */
+  height: auto; /* Maintain aspect ratio */
+  transition: filter 0.01s ease; /* Smooth transition for the shadow effect */
+  /* Initial state of the drop shadow, set to none or very subtle */
+  filter: drop-shadow(0 0 0 transparent);
+}
+
+.logo-container:hover .logo-image {
+  transform: scale(1.05); /* Scale the logo on hover */
+  /* Apply drop-shadow filter to simulate a shadow around the image */
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+  /* The above values are x-offset, y-offset, blur-radius, and color */
+  /* Adjust them as needed to make the shadow less "fat" */
+}

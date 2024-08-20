@@ -1,0 +1,333 @@
+.login-button {
+  padding: 12px 30px; /* Adjust the padding to better fit your text */
+  font-size: 16px; /* Maintain a font size that is readable */
+  font-weight: bold;
+  color: white; /* Text color */
+  background-image: linear-gradient(to right, #b70d0d, #b70d0d); /* Gradient background */
+  border: none; /* No border */
+  border-radius: 30px; /* Fully rounded corners */
+  cursor: pointer;
+  outline: none; /* Remove the outline to keep the design clean */
+  text-transform: uppercase; /* Optional: make the text uppercase */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+  transition: all 0.3s ease, transform 0.3s ease; /* Add transform to the transition properties */
+}
+
+.login-button:hover {
+  background-image: linear-gradient(to left, #880909, #880909); /* Invert gradient direction */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Increase shadow size for pop effect */
+  transform: scale(1.05); /* Scale the button to 105% of its size */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.login-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 1001;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px; /* Adjust width as necessary */
+}
+
+.login-logo {
+  display: block;
+  margin: 0 auto 20px auto; /* Center logo above the form */
+  height: 40px; /* Adjust size as necessary */
+}
+
+.forgot-password-link {
+  text-align: center; /* Center the text */
+  color: #007bff; /* Give it a link-like color */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  padding-top: 10px; /* Add some space above the link */
+  font-size: 0.9em; /* Adjust font size if necessary */
+}
+
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.login-form input {
+  padding: 10px;
+  margin-top: 5px; /* Space between label and input */
+  margin-bottom: 20px; /* Space between input fields */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Full width of the form */
+}
+
+.login-form .toggle-visibility {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+body.dark-mode .login-form .toggle-visibility {
+  filter: invert(100%);
+  opacity: 1; /* Ensure eye icon is fully visible in dark mode */
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.toggle-visibility {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.toggle-visibility.visible {
+  opacity: 1;
+}
+
+.close-btn {
+  background-color: #dc3545; /* Use a distinct red background */
+  color: white; /* Ensure the 'X' is white for contrast */
+  width: 30px; /* Set a specific width for square shape */
+  height: 30px; /* Set a specific height for square shape */
+  border-radius: 5px; /* Optional: to slightly round the corners */
+  padding: 0; /* Adjust padding as needed */
+  font-size: 20px; /* Adjust font size as needed for the 'X' */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover {
+  background-color: #c82333; /* A slightly darker shade for hover effect */
+}
+
+.submit-btn {
+  padding: 12px 30px; /* Adjust the padding to better fit your text */
+  font-size: 16px; /* Maintain a font size that is readable */
+  font-weight: bold;
+  color: white; /* Text color */
+  background-image: linear-gradient(to right, #b70d0d, #b70d0d); /* Gradient background */
+  border: none; /* No border */
+  border-radius: 30px; /* Fully rounded corners */
+  cursor: pointer;
+  outline: none; /* Remove the outline to keep the design clean */
+  text-transform: uppercase; /* Optional: make the text uppercase */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  width: 100%; /* Adjust width to match input fields */
+}
+
+.submit-btn:hover {
+  background-image: linear-gradient(to left, #880909, #880909); /* Invert gradient direction on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Increase shadow size for pop effect */
+  transform: scale(1.05); /* Scale the button to 105% of its size on hover */
+}
+/* Close button hover effect */
+.close-btn:hover {
+  background-color: #c82333;
+}
+
+/* Additional styles to ensure consistent positioning and visibility */
+.login-modal .overlay {
+  z-index: 1000; /* Ensures the overlay is just below the modal */
+}
+
+.login-form input,
+.login-form .submit-btn {
+  width: calc(100% - 20px); /* Subtract the total horizontal padding */
+  margin: 0; /* Adjust margin as necessary */
+}
+
+/* Adjust the password label wrapper if necessary */
+.password-label .input-wrapper {
+  position: relative;
+  width: 100%; /* Make sure it fills the parent */
+}
+
+/* Adjust visibility toggle icon positioning */
+.toggle-visibility {
+  /* Position adjustments */
+}
+
+.login-error {
+  color: #dc3545; /* Red color for error message */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Styles for profile button - placeholder */
+.profile-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px
+}
+
+.profile-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* Dropdown Menu styles */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Set a width for the dropdown */
+  z-index: 1002; /* Above everything else */
+  display: none; /* Hide by default */
+}
+
+/* Display the dropdown menu when the profile button is clicked */
+.profile-button.active + .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown menu list styles */
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu ul li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dropdown-menu ul li:hover {
+  background-color: #f7f7f7;
+}
+
+/* Close button styles */
+.close-btn {
+  /* Styles for the close button remain the same as previously defined */
+  /* Add any additional styles if needed */
+}
+
+/* Styles for when a user is logged in and the dropdown is active */
+.login-button.hidden {
+  display: none; /* Hide the login button */
+}
+
+/* These are the dark mode specific styles */
+body.dark-mode .login-form {
+  background-color: #2c2c2c; /* Dark mode background for form */
+  color: #fff; /* Dark mode text color */
+}
+
+body.dark-mode .login-form input,
+body.dark-mode .login-form .submit-btn {
+  background-color: #434343; /* Dark mode input and button background */
+  color: #fff; /* Dark mode input and button text color */
+  border-color: #555; /* Dark mode input and button border color */
+}
+
+body.dark-mode .login-form .submit-btn {
+  background-color: #5cb85c; /* A color that stands out in dark mode for the button */
+}
+
+.reset-password-submit-btn {
+  padding: 12px 30px; /* Same padding as the login button for consistency */
+  font-size: 16px; /* Consistent font size */
+  font-weight: bold; /* Same font weight for visual consistency */
+  color: white; /* Text color for readability */
+  background-color: #b70d0d; /* Red background to match the login button */
+  border: none; /* No border for a clean look */
+  border-radius: 30px; /* Rounded corners like the login button */
+  cursor: pointer; /* Pointer cursor to indicate it's clickable */
+  outline: none; /* Remove the outline for aesthetics */
+  text-transform: uppercase; /* Uppercase text for stylistic choice */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+  margin-top: 20px; /* Space above the button */
+  width: 100%; /* Full width of its container */
+}
+
+.reset-password-submit-btn:hover {
+  background-color: #880909; /* Darken the button on hover for interaction feedback */
+  transform: scale(1.05); /* Slightly increase the size on hover */
+}
+
+/* You might also want to add some margin-top to the .forgot-password-link to give it some space from the button */
+.forgot-password-link {
+  margin-top: 15px; /* Adjust the space above the forgot password link */
+  display: block; /* Ensure it takes its own line */
+  text-align: center; /* Center the text for better aesthetics */
+  color: #007bff; /* Make it blue to indicate it's clickable */
+  cursor: pointer; /* Change cursor to signify interactivity */
+  font-size: 0.9em; /* Adjust font size as needed */
+}
+
+/* Since the forgot password link is now styled, you can use this for the hover effect */
+.forgot-password-link:hover {
+  text-decoration: underline; /* Underline on hover to further signify it's clickable */
+}
+
+.notification-message {
+  color: #d9534f; /* red color for errors */
+  background-color: #f2dede; /* light red background */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ebccd1;
+  border-radius: 4px;
+  text-align: center;
+}
+
+body.dark-mode .login-form h2{
+  color: #f2f2f2;
+}

@@ -1,0 +1,275 @@
+.list-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.list-header h1 {
+  margin: 0;
+}
+
+.delete-list-button,
+.download-buttons button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.delete-list-button {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.delete-list-button:hover {
+  background-color: #cc0000;
+  transform: translateY(-2px);
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.download-buttons button:nth-child(1) {
+  background-color: #ff4d4d; /* Main red color */
+  color: white; /* Secondary white text */
+  border: 1px solid #ff4d4d;
+}
+
+.download-buttons button:nth-child(2) {
+  background-color: #007bff;
+  color: white;
+}
+
+.download-buttons button:nth-child(3) {
+  background-color: #28a745;
+  color: white;
+}
+
+.download-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #eaf5ff;
+}
+
+button.remove-product {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+button.remove-product:hover {
+  background-color: #cc0000;
+}
+
+/* Dark mode adjustments */
+.dark-mode .list-page {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+.dark-mode th {
+  background-color: #555;
+  color: #f9f9f9; /* Light text for dark background in the header */
+}
+
+.dark-mode tr:nth-child(even) {
+  background-color: #444; /* Darker background for even rows */
+}
+
+.dark-mode tr:hover {
+  background-color: #555; /* Darker background for hover state */
+}
+
+.dark-mode button.remove-product {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.dark-mode button.remove-product:hover {
+  background-color: #cc0000;
+}
+
+
+/* Other styles remain unchanged */
+
+/* Dark mode adjustments */
+.dark-mode .list-page {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+.dark-mode th,
+.dark-mode td {
+  border: 1px solid #767676; /* Visible border color for dark mode */
+}
+
+.dark-mode th {
+  background-color: #555;
+  color: #f9f9f9; /* Light text for dark background in the header */
+}
+
+.dark-mode tr:nth-child(even) {
+  background-color: #444; /* Darker background for even rows */
+}
+
+.dark-mode tr:hover {
+  background-color: #555; /* Darker background for hover state */
+}
+
+/* Make the remove-product button red */
+button.remove-product {
+  background-color: #ff4d4d; /* Red background */
+  color: white; /* White text */
+  border: none;
+}
+
+button.remove-product:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Bold text for download buttons */
+.download-buttons button {
+  font-weight: bold; /* Bold font for all download buttons */
+}
+
+/* Assuming you will add icons to buttons, adjust padding accordingly */
+.download-buttons button {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between icon and text */
+}
+
+/* Other styles remain unchanged */
+
+/* Dark mode adjustments */
+.dark-mode .list-page {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+.dark-mode th,
+.dark-mode td {
+  border: 1px solid #767676; /* Visible border color for dark mode */
+}
+
+.dark-mode th {
+  background-color: #555;
+  color: #f9f9f9; /* Light text for dark background in the header */
+}
+
+.dark-mode tr:nth-child(even) {
+  background-color: #444; /* Darker background for even rows */
+}
+
+.dark-mode tr:hover {
+  background-color: #555; /* Darker background for hover state */
+}
+
+/* Make the remove-product button red */
+button.remove-product {
+  background-color: #ff4d4d; /* Red background */
+  color: white; /* White text */
+  border: none;
+}
+
+button.remove-product:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Bold text for download buttons */
+.download-buttons button {
+  font-weight: bold; /* Bold font for all download buttons */
+}
+
+/* Assuming you will add icons to buttons, adjust padding accordingly */
+.download-buttons button {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between icon and text */
+}
+
+/* Example of icon added as background image - adjust URLs accordingly */
+.download-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Adds space between the icon and the text */
+  font-weight: bold;
+}
+
+/* Remove product button styles */
+button.remove-product {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 16px; /* Adjust padding as needed */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: bold; /* Make the text bold */
+  margin-left: 10px; /* Add space between the button and other content */
+}
+
+button.remove-product:hover {
+  background-color: #cc0000; /* Darker red on hover */
+  transform: translateY(-2px); /* Slightly lift the button on hover */
+}
+
+button.remove-product:active {
+  transform: scale(0.95); /* Slightly reduce size on active */
+}
+
+/* Dark mode adjustments for remove product button */
+.dark-mode button.remove-product {
+  background-color: #ff4d4d; /* Red background */
+  color: white; /* White text */
+}
+
+.dark-mode button.remove-product:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}

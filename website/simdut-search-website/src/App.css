@@ -1,0 +1,27 @@
+/* App.css - Global dark mode styles */
+
+/* Default light theme colors */
+body {
+  background-color: #fff; /* Light background */
+  color: #000; /* Dark text color */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark theme colors */
+body.dark-mode {
+  background-color: #363537; /* Dark background */
+  color: #FAFAFA; /* Light text color */
+}
+
+/* You might need to add other styles for links, headers, etc. For example: */
+
+/* Light theme link color */
+a {
+  color: #000;
+  transition: color 0.3s;
+}
+
+/* Dark theme link color */
+body.dark-mode a {
+  color: #BDBDBD;
+}

@@ -1,0 +1,139 @@
+.profile-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.profile-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.3s ease;
+}
+
+.profile-logo {
+  width: 48px; /* Increase the size of the profile logo */
+  transition: filter 0.3s; /* For smooth color inversion */
+}
+
+.profile-text {
+  font-size: 14px; /* Adjust as needed */
+  font-weight: bold; /* Make text bold */
+  margin-top: 4px; /* Space between image and text */
+  color: #000; /* Default text color for light mode */
+}
+
+/* Adjust text color for dark mode */
+body.dark-mode .profile-text {
+  color: #FFF; /* Text color for dark mode */
+}
+
+/* Invert logo colors in dark mode */
+body.dark-mode .profile-logo {
+  filter: invert(100%); /* Invert colors in dark mode */
+}
+
+body.dark-mode .profile-logo:hover{
+  filter: invert(100%);
+}
+
+/* Make button pop and invert colors on hover */
+.profile-container:hover .profile-button {
+  transform: scale(1.1); /* Enlarges the button */
+}
+
+.profile-button:hover {
+  transform: scale(1.1); /* Slightly enlarges the button on hover */
+}
+
+/* Optionally, you can make the hover effect more noticeable */
+.profile-button:hover .profile-logo,
+.profile-button:hover .profile-text {
+  filter: brightness(1.2); /* Optional: brighten the logo and text on hover */
+}
+
+
+/* Profile.css */
+
+/* ... other styles ... */
+
+/* Show the dropdown menu when showDropdown is true */
+.profile-container .dropdown-menu.show {
+  display: block;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 5px); /* Adjust the top position as necessary */
+  right: 50%; /* Start at the middle of the profile button */
+  transform: translateX(50%); /* Align to the center of the profile button */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  z-index: 1002; /* Ensure it's above other elements */
+}
+
+/* List inside the dropdown */
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List items */
+.dropdown-menu ul li {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s, transform 0.3s;
+  text-align: left; /* Align text to the left */
+}
+
+/* Icon and text spacing */
+.dropdown-menu ul li img {
+  margin-right: 8px; /* Space between the icon and text */
+}
+
+/* Icon sizes */
+.dropdown-menu ul li img {
+  width: 24px;
+  height: 24px; /* Fixed height for consistency */
+}
+
+/* List item hover effect */
+.dropdown-menu ul li {
+  border-radius: 10px; /* Adjust the radius value as needed */
+}
+
+.dropdown-menu ul li:hover {
+  background-color: #f7f7f7;
+  transform: scale(1.07);
+  border-radius: 10px; /* Ensure the rounded corners remain on hover */
+}
+
+/* Text style */
+.dropdown-menu ul li {
+  font-weight: bold; /* Bold text */
+}
+
+/* Invert colors in dark mode */
+body.dark-mode .dropdown-menu {
+  background-color: #333; /* Dark background for dropdown */
+  color: white; /* White text color */
+}
+
+body.dark-mode .dropdown-menu ul li img {
+  filter: invert(100%); /* Invert icon colors */
+}
+
+body.dark-mode .dropdown-menu ul li:hover {
+  background-color: #555; /* Darker background for hover state */
+}

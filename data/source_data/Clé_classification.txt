@@ -1,0 +1,139 @@
+Clé SIMDUT Cdn 2015|Classification Cdn 2015|
+DP.2.1|Gaz inflammables / Catégorie 1|
+DP.2.2|Gaz inflammables / Catégorie 2|
+DP.3.1|Aérosols inflammables / Catégorie 1|
+DP.3.2|Aérosols inflammables / Catégorie 2|
+DP.4.1|Gaz comburants / Catégorie 1|
+DP.5.1|Gaz sous pression / Gaz comprimé|
+DP.5.2|Gaz sous pression / Gaz liquéfié|
+DP.5.3|Gaz sous pression / Gaz liquéfié réfrigéré|
+DP.5.99|Gaz sous pression / Catégorie non définie|
+DP.5.4|Gaz sous pression / Gaz dissous|
+DP.6.1|Liquides inflammables / Catégorie 1|
+DP.6.2|Liquides inflammables / Catégorie 2|
+DP.6.3|Liquides inflammables / Catégorie 3|
+DP.6.4|Liquides inflammables / Catégorie 4|
+DP.7.1|Matières solides inflammables / Catégorie 1|
+DP.7.2|Matières solides inflammables / Catégorie 2|
+DP.8.A|Matières autoréactives / Type A|
+DP.8.B|Matières autoréactives / Type B|
+DP.8.C|Matières autoréactives / Type C|
+DP.8.D|Matières autoréactives / Type D|
+DP.8.E|Matières autoréactives / Type E|
+DP.8.F|Matières autoréactives / Type F|
+DP.8.G|Matières autoréactives / Type G|
+DP.8.99|Matières autoréactives / Catégorie non définie|
+DP.9.1|Liquides pyrophoriques / Catégorie 1|
+DP.10.1|Matières solides pyrophoriques / Catégorie 1|
+DP.11.1|Matières auto-échauffantes / Catégorie 1|
+DP.11.2|Matières auto-échauffantes / Catégorie 2|
+DP.11.99|Matières auto-échauffantes / Catégorie non définie|
+DP.12.1|Matières, qui au contact de l'eau, dégagent des gaz inflammables / Catégorie 1|
+DP.12.2|Matières, qui au contact de l'eau, dégagent des gaz inflammables / Catégorie 2|
+DP.12.3|Matières, qui au contact de l'eau, dégagent des gaz inflammables / Catégorie 3|
+DP.13.1|Liquides comburants / Catégorie 1|
+DP.13.2|Liquides comburants / Catégorie 2|
+DP.13.3|Liquides comburants / Catégorie 3|
+DP.14.1|Matières solides comburantes / Catégorie 1|
+DP.14.2|Matières solides comburantes / Catégorie 2|
+DP.14.3|Matières solides comburantes / Catégorie 3|
+DP.15.A|Peroxydes organiques / Type A|
+DP.15.B|Peroxydes organiques / Type B|
+DP.15.C|Peroxydes organiques / Type C|
+DP.15.D|Peroxydes organiques / Type D|
+DP.15.E|Peroxydes organiques / Type E|
+DP.15.F|Peroxydes organiques / Type F|
+DP.15.G|Peroxydes organiques / Type G|
+DP.15ex.98|Peroxydes organiques / Catégorie non définie|
+DP.15.99|Peroxydes organiques / Catégorie non définie|
+DP.16.1|Matières corrosives pour les métaux / Catégorie 1|
+DP.17.1|Poussières combustibles / Catégorie 1|
+DP.17.99|Poussières combustibles / Catégorie non définie|
+DP.18.1|Asphyxiants simples / Catégorie 1|
+DP.19.1|Gaz pyrophoriques / Catégorie 1|
+DP.20ex.1|Dangers physiques non classifiés ailleurs (bombe explosant) / Catégorie 1|
+DP.20fl.1|Dangers physiques non classifiés ailleurs (flamme) / Catégorie 1|
+DP.20co.1|Dangers physiques non classifiés ailleurs (flamme sur un cercle) / Catégorie 1|
+DP.20bo.1|Dangers physiques non classifiés ailleurs (bouteille à gaz) / Catégorie 1|
+DP.20co.1|Dangers physiques non classifiés ailleurs (corrosion) / Catégorie 1|
+DP.20te.1|Dangers physiques non classifiés ailleurs (tête de mort sur deux tibias) / Catégorie 1|
+DP.20pex.1|Dangers physiques non classifiés ailleurs (point d'exclamation) / Catégorie 1|
+DP.20gi.1|Dangers physiques non classifiés ailleurs (gaz instable) / Catégorie 1|
+DS.1c.1|Toxicité aiguë - cutanée / Catégorie 1|
+DS.1c.2|Toxicité aiguë - cutanée / Catégorie 2|
+DS.1c.3|Toxicité aiguë - cutanée / Catégorie 3|
+DS.1c.4|Toxicité aiguë - cutanée / Catégorie 4|
+DS.1c.99|Toxicité aiguë - cutanée / Non évalué|
+DS.1i.1cvr|Toxicité aiguë - inhalation / Catégorie 1corrVR|
+DS.1i.4cvr|Toxicité aiguë - inhalation / Catégorie 4corrVR|
+DS.1i.1|Toxicité aiguë - inhalation / Catégorie 1|
+DS.1i.3cvr|Toxicité aiguë - inhalation / Catégorie 3corrVR|
+DS.1i.2cvr|Toxicité aiguë - inhalation / Catégorie 2corrVR|
+DS.1i.2|Toxicité aiguë - inhalation / Catégorie 2|
+DS.1i.3|Toxicité aiguë - inhalation / Catégorie 3|
+DS.1i.4|Toxicité aiguë - inhalation / Catégorie 4|
+DS.1i.99|Toxicité aiguë - inhalation / Non évalué|
+DS.1o.1|Toxicité aiguë - orale / Catégorie 1|
+DS.1o.2|Toxicité aiguë - orale / Catégorie 2|
+DS.1o.3|Toxicité aiguë - orale / Catégorie 3|
+DS.1o.4|Toxicité aiguë - orale / Catégorie 4|
+DS.1o.99|Toxicité aiguë - orale / Non évalué|
+DS.2.1|Corrosion cutanée/irritation cutanée / Catégorie 1|
+DS.2.1A|Corrosion cutanée/irritation cutanée / Catégorie 1A|
+DS.2.1B|Corrosion cutanée/irritation cutanée / Catégorie 1B|
+DS.2.1C|Corrosion cutanée/irritation cutanée / Catégorie 1C|
+DS.2.2|Corrosion cutanée/irritation cutanée / Catégorie 2|
+DS.2.99|Corrosion cutanée/irritation cutanée / Non évalué|
+DS.3.1|Lésions oculaires graves/irritation oculaire / Catégorie 1|
+DS.3.2|Lésions oculaires graves/irritation oculaire / Catégorie 2|
+DS.3.2A|Lésions oculaires graves/irritation oculaire / Catégorie 2A|
+DS.3.2B|Lésions oculaires graves/irritation oculaire / Catégorie 2B|
+DS.3.99|Lésions oculaires graves/irritation oculaire / Non évalué|
+DS.4c.1|Sensibilisation cutanée / Catégorie 1|
+DS.4c.1A|Sensibilisation cutanée / Catégorie 1A|
+DP.6.99|Liquides inflammables / Catégorie non définie|
+DS.4c.1B|Sensibilisation cutanée / Catégorie 1B|
+DS.4c.99|Sensibilisation cutanée / Non évalué|
+DS.4r.1|Sensibilisation respiratoire / Catégorie 1|
+DS.4r.1A|Sensibilisation respiratoire / Catégorie 1A|
+DS.4r.1B|Sensibilisation respiratoire / Catégorie 1B|
+DS.4r.99|Sensibilisation respiratoire / Non évalué|
+DS.5.1|Mutagénicité sur les cellules germinales / Catégorie 1|
+DS.5.1A|Mutagénicité sur les cellules germinales / Catégorie 1A|
+DS.5.1B|Mutagénicité sur les cellules germinales / Catégorie 1B|
+DS.5.2|Mutagénicité sur les cellules germinales / Catégorie 2|
+DP.7.99|Matières solides inflammables / Catégorie non définie|
+DS.5.99|Mutagénicité sur les cellules germinales / Non évalué|
+DS.6.1|Cancérogénicité / Catégorie 1|
+DS.6.1A|Cancérogénicité / Catégorie 1A|
+DS.6.1B|Cancérogénicité / Catégorie 1B|
+DS.6.2|Cancérogénicité / Catégorie 2|
+DS.6.99|Cancérogénicité / Non évalué|
+DS.7.1|Toxicité pour la reproduction / Catégorie 1|
+DS.7.1A|Toxicité pour la reproduction / Catégorie 1A|
+DS.7.1B|Toxicité pour la reproduction / Catégorie 1B|
+DS.7.2|Toxicité pour la reproduction / Catégorie 2|
+DS.7.99|Toxicité pour la reproduction / Non évalué|
+DS.7a.1|Toxicité pour la reproduction (allaitement) / Effets sur ou via l'allaitement|
+DS.7a.99|Toxicité pour la reproduction (allaitement) / Effets sur ou via l'allaitement : Non évalué|
+DS.8.1|Toxicité pour certains organes cibles - exposition unique / Catégorie 1|
+DS.8.2|Toxicité pour certains organes cibles - exposition unique / Catégorie 2|
+DS.8.99|Toxicité pour certains organes cibles - exposition unique / Non évalué|
+DS.8n.3|Toxicité pour certains organes cibles - exposition unique (effets narcotiques) / Catégorie 3 - Effet narcotique|
+DS.8i.3|Toxicité pour certains organes cibles - exposition unique (irritation des voies respiratoires) / Catégorie 3 - Irritation des voies respiratoires|
+DS.9.1|Toxicité pour certains organes cibles - expositions répétées / Catégorie 1|
+DS.9.3|Toxicité pour certains organes cibles - expositions répétées / Catégorie 2|
+DS.9.99|Toxicité pour certains organes cibles - expositions répétées / Non évalué|
+DS.10.1|Danger par aspiration / Catégorie 1|
+DS.10.99|Danger par aspiration / Non évalué|
+DS.11.1|Matières infectieuses / Catégorie 1|
+DS.11.99|Matières infectieuses / Non évalué|
+DS.12co.1|Dangers pour la santé non classifiés ailleurs (corrosion) / Catégorie 1|
+DS.12te.1|Dangers pour la santé non classifiés ailleurs (tête de mort sur deux tibias) / Catégorie 1|
+DS.12pex.1|Dangers pour la santé non classifiés ailleurs (point d'exclamation) / Catégorie 1|
+DS.12si.1|Dangers pour la santé non classifiés ailleurs (dangers pour la santé) / Catégorie 1|
+DS.12bi.1|Dangers pour la santé non classifiés ailleurs (matières infectieuses présentant un danger biologique) / Catégorie 1|
+DP.8.98|Matières autoréactives / Catégorie non définie|
+DP.12.99|Matières, qui au contact de l'eau, dégagent des gaz inflammables / Catégorie non définie|
+DP.13.99|Liquides comburants / Catégorie non définie|
+DP.14.99|Matières solides comburantes / Catégorie non définie|

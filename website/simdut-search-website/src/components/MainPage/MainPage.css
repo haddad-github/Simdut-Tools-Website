@@ -1,0 +1,47 @@
+/* MainPage.css */
+.main-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0 auto;
+  min-height: 100vh; /* Use the full height of the viewport */
+  flex-wrap: wrap; /* Ensure that components wrap on smaller screens */
+}
+
+/* Assuming .main-content is the container for MostSearched and other elements */
+.main-content {
+  flex-grow: 1; /* Allow the container to grow and take up available space */
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  align-items: center; /* Center children horizontally in the column */
+  max-width: 800px; /* Set a maximum width for the content */
+  width: 100%; /* Take up the full width available */
+  margin: 0 auto; /* Center the container */
+  order: 2; /* Ensure main-content stays in the center */
+}
+
+/* Side components (TrafficStats and SavedLists) */
+.side-component {
+  flex-shrink: 0; /* Prevent side components from shrinking */
+  order: 1; /* Ensure TrafficStats stays on the left */
+}
+
+.saved-lists-container {
+  flex-shrink: 0; /* Prevent side components from shrinking */
+  order: 3; /* Ensure SavedLists stays on the right */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    max-width: 100%; /* Remove the max-width restriction on smaller screens */
+    padding: 0 10px; /* Add some padding on smaller screens */
+  }
+
+  .side-component, .saved-lists-container {
+    width: 100%; /* Make side components take full width on smaller screens */
+    margin: 10px 0; /* Adjust margins for smaller screens */
+    order: 0; /* Ensure side components are above main content on smaller screens */
+  }
+}

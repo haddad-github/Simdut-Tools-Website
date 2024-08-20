@@ -1,0 +1,42 @@
+#Virtual environment
+venv/
+
+#Intelliji
+.idea/
+
+#Environment variables
+.env
+*.env
+
+#pytest cache
+.pytest_cache/
+
+#Bytecode-compiled files
+__pycache__/
+*.pyc
+
+#OS generated files
+.DS_Store
+
+#Log files
+*.log
+
+#Powershell scripts
+*.ps1
+
+### React
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+
+*.sublime*
+
+psd
+thumb
+sketch
+

@@ -1,0 +1,52 @@
+/* Header.css */
+.header {
+  background-color: #f0f0f0; /* Replace with the color you want for the header */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Needed for absolute positioning of children */
+}
+
+.translate-button-container{
+  display:flex;
+  left:720px;
+  top:60px;
+  z-index:3;
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+
+.logo-container {
+  order: 1; /* Ensures logo is at the top in the column direction */
+  z-index: 2; /* Ensures logo is above the navbar links if they overlap */
+}
+
+.nav-bar {
+  order: 3; /* Ensures navbar links are below the logo */
+  z-index: 1;
+}
+
+.auth-darkmode {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  order: 2; /* Positions auth and dark mode buttons between the logo and navbar links */
+}
+
+/* You might need to add a specific class or container for the Sign In button to position it correctly */
+.sign-in-container {
+  margin-right: 15px; /* Spacing between the Sign In button and the DarkModeButton */
+}
+
+/* DarkModeButton.css */
+.dark-mode-toggle {
+  /* If you have additional styling that affects the position, adjust here */
+}
+
+/* You might want to adjust the margin of the buttons if they are too close to each other */
+.sign-in-container > button:first-child {
+  margin-right: 10px;
+}

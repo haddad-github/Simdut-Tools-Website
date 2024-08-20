@@ -1,0 +1,109 @@
+.profile-page {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.profile-page h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-page form {
+  margin-bottom: 20px;
+}
+
+.profile-page label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.profile-page input[type="password"],
+.profile-page input[type="email"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.profile-page input[type="email"][disabled] {
+  background-color: #eaeaea;
+}
+
+.profile-page button {
+  display: inline-block;
+  background-color: #b70d0d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-page button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  text-align: center;
+  color: #d12317;
+}
+
+/* Add styles for dark mode here */
+.dark-mode .profile-page {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.dark-mode .profile-page label {
+  color: white;
+}
+
+.dark-mode .profile-page input[type="password"],
+.dark-mode .profile-page input[type="email"] {
+  border: 1px solid #555;
+  background-color: #222;
+  color: white;
+}
+
+.dark-mode .profile-page input[type="email"][disabled] {
+  background-color: #444;
+}
+
+.dark-mode .profile-page button {
+  background-color: #cf2317; /* Keep it green in dark mode for visibility */
+}
+
+.dark-mode .profile-page h1{
+  color: white;
+}
+
+.dark-mode .profile-page button:hover {
+  background-color: #690707;
+}
+
+.dark-mode .profile-page p {
+  color: #f8d7da; /* Lighter red for better visibility in dark mode */
+}
+
+form-profile{
+  margin: 20px;
+}
+
+form-profile input{
+  margin-top: 10px;
+}
+
+.form-profile button{
+  display: flex;
+  margin-bottom: 60px;
+}

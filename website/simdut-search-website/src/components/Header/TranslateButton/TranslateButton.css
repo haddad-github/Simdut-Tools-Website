@@ -1,0 +1,69 @@
+.translate-button-container {
+  position: relative; /* Establishes a positioning context for dropdown */
+}
+
+.language-change-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.flag-icon {
+  height: 30px; /* Adjust as needed */
+  width: 30px; /* Make the flag square */
+  border-radius: 8px; /* Very rounded corners */
+  margin-right: 5px; /* Space between the flag and the text */
+  object-fit: cover; /* Ensure the flag fits within the shape */
+}
+
+.flag-icon:hover {
+  transform: scale(1.1); /* Zoom in by 10% */
+  transition: transform 0.3s ease;
+}
+
+.translate-dropdown {
+  position: absolute;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  top: 100%;
+  left: 0;
+  width: 250px; /* Adjust width as needed */
+  z-index: 1000;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better visibility */
+}
+
+.translate-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.translate-dropdown li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc; /* Separating line for each language */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.translate-dropdown li:last-child {
+  border-bottom: none;
+}
+
+.translate-dropdown li:hover {
+  background-color: #e0e0e0;
+}
+
+/* Dark mode styles */
+.dark-mode .translate-dropdown {
+  background-color: #333;
+  border-color: #444;
+}
+
+.dark-mode .translate-dropdown li:hover {
+  background-color: #444; /* Darker background on hover in dark mode */
+}
